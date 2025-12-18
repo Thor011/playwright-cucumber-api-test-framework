@@ -1,0 +1,41 @@
+{
+  "name": "playwright-api-test-framework",
+  "version": "1.0.0",
+  "description": "Comprehensive API test framework using Playwright and Cucumber/Gherkin with advanced testing patterns",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "test:debug": "playwright test --debug",
+    "test:cucumber": "cucumber-js",
+    "test:cucumber:api": "cucumber-js features/api-tests.feature",
+    "test:cucumber:validation": "cucumber-js features/validation.feature features/contract-validation.feature",
+    "test:cucumber:advanced": "cucumber-js features/http-protocol.feature features/identity-validation.feature features/sorting-pagination.feature features/idempotency.feature features/performance.feature features/data-quality.feature",
+    "test:cucumber:all": "cucumber-js features/**/*.feature"
+  },
+  "keywords": [
+    "api-testing",
+    "playwright",
+    "cucumber",
+    "bdd",
+    "gherkin",
+    "test-automation",
+    "rest-api",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.4.0",
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^22.19.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
