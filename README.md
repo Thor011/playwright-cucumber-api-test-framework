@@ -63,7 +63,7 @@ api-tests/
 ## Quick Start
 
 ### Prerequisites
-- Node.js (v16 or higher)
+- Node.js 20.x or higher (required for Cucumber)
 - npm or yarn
 
 ### Setup
